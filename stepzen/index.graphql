@@ -16,13 +16,6 @@ schema
 
 Feel free to delete this comment block.
 """
-schema @sdl(files: ["githubstatus/index.graphql"]) {
+schema @sdl(files: ["github/index.graphql", "fauna/index.graphql"]) {
   query: Query
-}
-
-type Query {
-  """
-  The StepZen healthcheck endpoint
-  """
-  szHealthCheck: JSON @rest(endpoint: "https://demo.stepzen.io/ping")
 }

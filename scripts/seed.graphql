@@ -1,0 +1,15 @@
+type Highlight {
+  repository: Repository! @relation
+}
+
+type Repository {
+  owner: String!
+  name: String!
+  coverImage: String
+  shortDescription: String
+}
+
+type Query {
+  highlights: [Highlight]!
+  repositories: [Repository]!
+}

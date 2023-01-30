@@ -1,8 +1,5 @@
 import fetch from "node-fetch";
 
-const STEPZEN_ACCOUNT = process.env.STEPZEN_ACCOUNT;
-const STEPZEN_API_KEY = process.env.STEPZEN_API_KEY;
-
 // ## Security best practice
 //
 // This API route adds authorization headers and proxies GraphQL requests to
@@ -15,12 +12,12 @@ const STEPZEN_API_KEY = process.env.STEPZEN_API_KEY;
 // https://stepzen.com/docs/access-control/access-control-jwt
 export default async function handler(req, res) {
   try {
-    const url = `https://${STEPZEN_ACCOUNT}.stepzen.net/api/vercel/__graphql`;
+    const url = process.env.STEPZEN_ENDPOINT;
     const response = await fetch(url, {
       method: "POST",
       headers: {
         "content-type": "application/json",
-        authorization: `apikey ${STEPZEN_API_KEY}`,
+        authorization: `apikey ${process.env.STEPZEN_API_KEY}`,
       },
       body: typeof req.body === "string" ? req.body : JSON.stringify(req.body),
     });

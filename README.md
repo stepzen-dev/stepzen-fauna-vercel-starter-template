@@ -1,4 +1,12 @@
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fstepzen-dev%2Fstepzen-vercel-starter-template&project-name=stepzen-starter&repository-name=stepzen-starter&redirect-url=https%3A%2F%2Fdashboard.stepzen.com&developer-id=oac_fS5U5f04cXnxV1N90Ws6SFXh&demo-title=StepZen%20Vercel%20Starter&demo-description=Starter%20kit%20to%20build%20fullstack%20Next.js%20projects%20with%20StepZen%20and%20Vercel&demo-image=%2F%2Fuser-images.githubusercontent.com%2F22416150%2F202710759-d6316ceb-ebd2-4b95-b93d-4e8d64a4cc37.png&demo-url=https%3A%2F%2Fgithub.com%2Fstepzen-dev%2Fstepzen-vercel-starter-template&integration-ids=oac_fS5U5f04cXnxV1N90Ws6SFXh&external-id=stepzen-dev%2Fstepzen-vercel-starter-template)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fstepzen-dev%2Fstepzen-fauna-vercel-starter-template&project-name=stepzen-fauna-vercel&repository-name=stepzen-fauna-vercel&redirect-url=https%3A%2F%2Fdashboard.stepzen.com%2Fexplorer%3Fendpoint%3Dapi%252Fstepzen-fauna-vercel&developer-id=oac_fS5U5f04cXnxV1N90Ws6SFXh&demo-title=StepZen%20Fauna%20Vercel%20starter&demo-description=Starter%20Kit%20to%20build%20fullstack%20Next.js%20Projects%20with%20StepZen%2C%20Fauna%20and%20Vercel&integration-ids=oac_Erlbqm8Teb1y4WhioE3r2utY,oac_fS5U5f04cXnxV1N90Ws6SFXh&external-id=stepzen-dev%2Fstepzen-fauna-vercel-starter-template)
+
+
+
+
+
+
+
+
 
 ---
 

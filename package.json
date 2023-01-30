@@ -3,26 +3,29 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "stepzen whoami --account && npm run nextjs-and-stepzen || stepzen login",
-    "nextjs-and-stepzen": "concurrently -n NextJS,StepZen \"npm run nextjs\" \"npm run stepzen\"",
-    "build": "next build",
+    "dev": "npm run setup && stepzen whoami --account && npm run nextjs-and-stepzen || stepzen login",
+    "nextjs-and-stepzen": "concurrently -n Nextjs,StepZen \"npm run nextjs\" \"npm run stepzen\"",
+    "build": "npm run setup && next build",
     "start": "next start",
+    "setup": "node ./scripts/setup.mjs",
     "nextjs": "next dev",
-    "stepzen": "stepzen start --dir ./stepzen",
+    "stepzen": "stepzen login && stepzen start --dir ./stepzen",
     "lint": "next lint"
   },
   "dependencies": {
-    "graphiql": "^2.1.0",
+    "dotenv": "^16.0.3",
     "graphql": "^16.6.0",
     "next": "12.3.1",
     "node-fetch": "^3.3.0",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "utils": "^0.3.1",
+    "yaml": "^2.2.1"
   },
   "devDependencies": {
     "concurrently": "^7.5.0",
     "eslint": "8.23.1",
     "eslint-config-next": "12.3.1",
-    "stepzen": "^0.24.0-beta.2"
+    "stepzen": "^0.24.0"
   }
 }

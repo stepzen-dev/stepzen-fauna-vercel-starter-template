@@ -1,0 +1,5 @@
+configurationset:
+  - configuration:
+      name: fauna
+      authorization: Bearer STEPZEN_FAUNA_ADMIN_KEY
+      domain: STEPZEN_FAUNA_DB_DOMAIN
